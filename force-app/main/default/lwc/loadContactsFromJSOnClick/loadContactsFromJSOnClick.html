@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Load Contacts from Java Script on Button click" icon-name="custom:custom7">
+        <div class="slds-m-around_medium">
+            <p class="slds-m-bottom_small">
+                <lightning-button
+                    label="Load Contacts"
+                    onclick={handleContactsLoad}
+                ></lightning-button>
+            </p>
+            <ul class="slds-m-around_medium">
+                <template iterator:it={contacts}>
+                    <li key={it.value.Id}>
+                        {it.value.Name}, {it.value.Title}
+                    </li>
+                </template>
+            </ul>
+        </div>
+    </lightning-card>
+</template>

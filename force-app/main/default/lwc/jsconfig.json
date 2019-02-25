@@ -2,7 +2,38 @@
     "compilerOptions": {
         "experimentalDecorators": true,
         "baseUrl": ".",
-        "paths": {}
+        "paths": {
+            "c/auto-load-contacts-from-apex": [
+                "autoLoadContactsFromApex/autoLoadContactsFromApex.js"
+            ],
+            "c/auto-load-contacts-from-js": [
+                "autoLoadContactsFromJS/autoLoadContactsFromJS.js"
+            ],
+            "c/helloworld": [
+                "helloworld/helloworld.js"
+            ],
+            "c/helloworldv1": [
+                "helloworldv1/helloworldv1.js"
+            ],
+            "c/helloworldv2": [
+                "helloworldv2/helloworldv2.js"
+            ],
+            "c/helloworldv3": [
+                "helloworldv3/helloworldv3.js"
+            ],
+            "c/helloworldv4": [
+                "helloworldv4/helloworldv4.js"
+            ],
+            "c/helloworldv5": [
+                "helloworldv5/helloworldv5.js"
+            ],
+            "c/load-contacts-from-js-on-click": [
+                "loadContactsFromJSOnClick/loadContactsFromJSOnClick.js"
+            ],
+            "c/search-contacts": [
+                "searchContacts/searchContacts.js"
+            ]
+        }
     },
     "include": [
         "**/*",

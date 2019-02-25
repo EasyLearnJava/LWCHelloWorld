@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Auto Load Contacts from Apex" icon-name="custom:custom8">
+        <ul class="slds-m-around_medium">
+            <template if:true={contacts.data}>
+                <template for:each={contacts.data} for:item="contact">
+                    <p key={contact.Id}>{contact.Name}</p>
+                </template>
+            </template>
+            <template if:true={contacts.error}>
+                <c-error-panel errors={contacts.error}></c-error-panel>
+            </template>
+        </ul>
+    </lightning-card>
+</template>
